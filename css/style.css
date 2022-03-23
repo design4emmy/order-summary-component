@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #E0E8FF;
+    font-weight: 400;
+    color: #989EB6;
+
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+   
+}
+
+
+h2,
+p{
+    margin-top: 0;
+}
+
+h1,h2,h3{
+    line-height: 1.1;
+    
+}
+
+h2{
+    font-size: 2rem;
+    color: #2C344B;
+}
+
+.card{
+    background-color: #fff;
+    width: 100%;
+    max-width: 28.1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.padding-48{
+    padding: 1.5rem;
+}
