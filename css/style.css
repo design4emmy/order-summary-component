@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     font-family: 'Red Hat Display', sans-serif;
@@ -15,8 +19,9 @@ body{
 
 
 h2,
-p{
-    margin-top: 0;
+p,
+button{
+    margin: 0;
 }
 
 h1,h2,h3{
@@ -27,9 +32,11 @@ h1,h2,h3{
 h2{
     font-size: 2rem;
     color: #2C344B;
+    font-weight: 900;
 }
 
 .card{
+    overflow: hidden;
     background-color: #fff;
     width: 100%;
     max-width: 28.1rem;
@@ -39,4 +46,119 @@ h2{
 
 .padding-48{
     padding: 1.5rem;
+}
+
+.padding-24{
+    padding: 1.5em;
+}
+
+.plan{
+    background-color: #F8F8FF;
+    text-align: left;
+    display: flex;
+    gap: 1rem
+}
+
+.plan p{
+    margin: 0;
+}
+
+.plan-title{
+    font-weight: 900;
+    color: #2C344B;
+}
+
+.br-1{
+    border-radius: .5rem;
+}
+
+.br-2{
+    border-radius: 1rem;
+}
+
+.push-right{
+    margin-left: auto;
+}
+
+
+a,
+.link {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    text-decoration: underline;
+    color: #382AE1;
+    font-weight: 900;
+}
+
+a:hover,
+a:focus,
+.link:hover,
+.link:focus {
+    text-decoration: none;
+    color: #382AE1;
+}
+
+
+
+
+.button{
+    cursor: pointer;
+    color: #F9FDFF;
+    background-color: transparent;
+    padding: 1em 2em;
+    font-weight: 900;
+    border: 0;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+
+
+
+.button[data-type="primary"]{
+    background-color: #382AE1;
+}
+
+.button[data-type="primary"]:hover,
+.button[data-type="primary"]:focus{
+    background-color: #7D73F6;
+}
+
+
+.button[data-type="naked"]{
+    color: #2C344B;
+    padding: 0;
+}
+
+
+.button[data-type="naked"]:hover,
+.button[data-type="naked"]:focus{
+    color: #0D111E;
+}
+
+
+
+
+
+/* =========composition=========
+= */
+
+/* This is one way */
+ /* .flow > :where(:not(:first-child)) {     Spacing amongst elements on the card
+    margin-top: 2em;
+
+} */ 
+
+/* This is another way */
+
+/* .flow > * + * {
+    margin-top: 2em; 
+} */
+
+/* This is another way */
+
+.grid-flow{
+    display: grid;
+    gap: 1rem;
 }
